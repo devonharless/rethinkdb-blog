@@ -1,0 +1,29 @@
+.outer-container, .main-container {
+  @include outer-container;
+}
+
+.container {
+  @include outer-container;
+  @include pad($base-padding);
+}
+
+// Grid
+.three-quarter {
+  @include span-columns(8 of 12);
+  @include omega();
+}
+
+.half {
+  @include span-columns(6 of 12);
+  @include omega(2n);
+}
+
+.third {
+  @include span-columns(4 of 12);
+  @include omega(3n);
+}
+
+.quarter {
+  @include span-columns(3 of 12);
+  @include omega(4n);
+}
