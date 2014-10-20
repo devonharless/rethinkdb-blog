@@ -1,0 +1,16 @@
+.global-nav {
+  background: $sapphire;
+
+  ul {
+    @include outer-container;
+  }
+
+  li {
+    @include inline-block;
+    margin-right: $base-margin;
+  }
+
+  a {
+    color: $white;
+  }
+}

@@ -1,7 +1,8 @@
+//First blog style
 .blog-v1 {
   .post {
     color: $dark-gray;
-    margin: 0 auto;
+    margin: $base-margin auto;
     max-width: em(800);
   }
 
@@ -81,9 +82,12 @@
   }
 }
 
+// Version 2
+
 .blog-v2 {
   .post {
     @include outer-container;
+    margin: $base-margin 0;
     border: 1px solid $light-gray;
   }
 
