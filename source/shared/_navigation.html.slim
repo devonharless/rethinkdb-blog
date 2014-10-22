@@ -1,7 +1,18 @@
 nav.global-nav
-  ul.container
-    li
-      = link_to 'Style 1', '/'
-    li
-      = link_to 'Style 2', '/blog.html'
-
+  .container
+    .left.logo
+      = link_to '/' do
+        h1 RethinkDB
+    ul.right.nav-items
+      li
+        = link_to 'Faq', '/'
+      li
+        = link_to 'Blog', '/blog.html'
+      li
+        = link_to 'Blog2', '/blog2.html'
+      li
+        = link_to 'Community', '/'
+      li
+        = link_to 'Events', '/'
+      li
+        = link_to 'About', '/'

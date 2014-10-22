@@ -7,6 +7,15 @@
   @include pad($base-padding);
 }
 
+// Extra space on the top/btm for block elements
+.offset-y-lg {
+  margin: $base-margin*4 auto;
+}
+
+.offset-y-md {
+  margin: $base-margin*2 auto;
+}
+
 // Grid
 .three-quarter {
   @include span-columns(8 of 12);
@@ -26,4 +35,13 @@
 .quarter {
   @include span-columns(3 of 12);
   @include omega(4n);
+}
+
+// Directional
+.left {
+  float: left;
+}
+
+.right {
+  float: right;
 }
