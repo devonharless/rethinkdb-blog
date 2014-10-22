@@ -88,3 +88,36 @@ input[type="submit"] {
   vertical-align: middle;
   white-space: nowrap;
 }
+
+//Overrides/Helpers
+.inline-input {
+  width: 100%;
+
+  #{$all-text-inputs},
+  button,
+  input[type="submit"] {
+    display: block;
+    float: left;
+    width: auto;
+  }
+
+  #{$all-text-inputs} {
+    border-radius: $base-border-radius 0 0 $base-border-radius;
+  }
+
+  button,
+  input[type="submit"] {
+    border-radius: 0 $base-border-radius $base-border-radius 0;
+  }
+}
+
+// Input sizes
+.small
+.inline.input input.small {
+  width: 25%;
+}
+
+.medium,
+.inline-input input.medium {
+  width: 50%;
+}

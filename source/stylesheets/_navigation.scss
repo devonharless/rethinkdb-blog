@@ -1,13 +1,15 @@
 .global-nav {
   background: $sapphire;
+  border: 1px solid red;
 
   ul {
     @include outer-container;
+    border: 1px solid green;
   }
 
   li {
     @include inline-block;
-    margin-right: $base-margin;
+    margin-left: $base-margin;
   }
 
   a {
