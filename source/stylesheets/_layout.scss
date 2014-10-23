@@ -72,6 +72,11 @@ $large-pad: $base-padding * 5;
   @include omega(4n);
 }
 
+.sixth {
+  @include span-columns(2 of 12);
+  @include omega(6n);
+}
+
 // Directional
 .left {
   float: left;
