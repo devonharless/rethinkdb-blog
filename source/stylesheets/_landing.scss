@@ -32,12 +32,14 @@ body {
 
 .dark {
   background: $sapphire;
+  color: $white;
 }
 
 // Community
 .callout {
-  background: lighten($goldenrod, 24%);
+  background: lighten($sky-blue, 5%);
   border-radius: $base-border-radius;
+  color: $sapphire;
   margin: 0 auto;
   width: 80%;
 }
